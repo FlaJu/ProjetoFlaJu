@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<title>TiComputer</title>
+<meta charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="stylePag.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+jQuery(document).ready(function($) { 
+    $(".scroll").click(function(event){        
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+   });
+});
+
+	$(".social-icons").focus(function(){
+		$(".social-icons").show();
+	});
+	$(".social-icons").focus(function(){
+		$(".social-icons").blur();
+	});
+
+$(document).ready(function(){
+	$('.lighbox').click(function(){
+		$('.background, .box').animate({'opacity':'.60'}, 500, 'linear');
+		$('.box').animate({'opacity':'1.00'}, 500, 'linear');
+		$('.background, .box').css('display','block');
+	});
+	$('.close').click(function(){
+		$('.background, .box').animate({'opacity':'0'}, 500, 'linear', function(){
+			$('.background, .box').css('display','none');
+		});
+	});
+	$('.background').click(function(){
+		$('.background, .box').animate({'opacity':'0'}, 500, 'linear', function(){
+			$('.background, .box').css('display','none');
+		});
+	});
+});
+</script>
+</script>
+</head>
+<body>
+<header id="menu">
+
+<ul>
+	<li><a href="#home" class="scroll">Home</a></li>
+	<li><a href="#empresa" class="scroll">Empresa</a></li>
+	<li><a href="#servico" class="scroll">Serviços</a></li>
+	<li><a href="#cliente" class="scroll">Clientes</a></li>
+	<li><a href="#portfolio" class="scroll">Portfólio</a></li>
+	<li><a href="#contato" class="scroll">Contato</a></li>
+</ul>
+
+</header>
+
+<div id="home" class="slide">
+
+<form method="post" action="nomeDaPagina.php">
+<div class="EfetuarLogin">
+<span class="fonte">Nome de usuário:</span> <br />
+<input class="caixaInput" type="text" name="nome" />
+<p />
+<span class="fonte">Senha:</span> <br />
+<input class="caixaInput" type="password" name="senha" />
+<p />
+<input class="btn-enter" type="submit" name="btn-enter" value="Entrar">
+<br><br>
+<a class="fonte link-cadastro lighbox" href="#">Cadastre-se</a>
+<div class="background"></div>
+</form>
+
+<div class="box"><div class="close">X</div>
+<form method="" action="">
+<span class="fonte">Nome de usuário:</span> <br />
+<input class="caixaInput" type="text" name="nomeDeUsuario" placeholder="Digite seu nome de usuario">
+<p />
+<span class="fonte">Email:</span> <br />
+<input class="caixaInput" type="email" name="email" placeholder="Digite seu email">
+<p />
+<span class="fonte">CPF:</span> <br />
+<input class="caixaInput" type="text" name="cpf" placeholder="Digite seu cpf">
+<p />
+<span class="fonte">Senha:</span> <br />
+<input class="caixaInput" type="password" name="senhaDeUsuario" maxlength="10" placeholder="Digite até 10 caracteres">
+<p />
+<span class="fonte">Repetir Senha:</span> <br />
+<input class="caixaInput" type="password" name="senhaDeUsuario" maxlength="10" placeholder="Repita sua senha">
+<p />
+<input class="btn-cadastro" type="submit" name="btn-cadastrar" value="Enviar">
+</div>
+</form>    
+</div>
+</div>
+
+
+<div class="imagem">
+
+<div id="empresa" class="slide">
+	<div class="img-mask"></div> 
+<h1 class="center">Empresa</h1>
+      
+<h1>&nbsp;&nbsp;Especializada em tecnologia desde que foi criada, a TiComputer tem como sua principal conduta a inovação de seus produtos e serviços. Em qualquer área em que atue, sua missão é oferecer soluções atualizadas com tecnologia de ponta, para atender às necessidades de seus clientes de maneira eficaz, sempre alinhada aos objetivos do negócio do cliente.
+
+</h1>
+
+</div>
+</div>
+
+
+<div id="servico" class="slide">
+
+<h1>Serviço</h1>
+
+</div>
+
+
+
+<div id="cliente" class="slide">
+
+<h1>Clientes</h1>
+     
+</div>
+
+
+
+<div id="portfolio" class="slide">
+
+<h1>Portfólio</h1>
+     
+</div>
+
+
+
+<div id="contato" class="slide">  
+<span class="contatos">Contatos</span><br />aqui
+<div class="contato">
+	<form method="" action="">
+	<span class="fonte">Nome:</span> <br />
+	<input class="caixaInput" type="text" name="nomeContato" placeholder="Informe seu nome">
+	<p />
+	<span class="fonte">Email:</span> <br />
+	<input class="caixaInput" type="email" name="emailContato" placeholder="Informe seu email">
+	<p />
+	<span class="fonte">Cidade:</span> <br />
+	<input class="caixaInput" type="text" name="cidadeContato" placeholder="Informe sua cidade">
+	<p />
+	<input class="btn-contato" type="submit" name="btnEnviarContato" value="Enviar">
+	<input class="btn-contato btn-espaco" type="reset" name="btnLimparContato" value="Limpar">
+	</form>
+</div>
+
+<div class="social-icons">
+&nbsp;<i class="fa fa-facebook"></i>
+<span>
+		&nbsp;&nbsp;FlaJudevelopment
+</span>
+<br />
+<i class="fa fa-envelope"></i>
+
+<span>
+		FlaJudevelopment@gmail.com
+</span>
+<br />
+<i class="fa fa-skype"></i>
+
+<span>
+		&nbsp;Fla.Ju.development
+</span>
+<br />
+<i class="fa fa-twitter"></i>
+
+<span>
+		&nbsp;FlaJusdevelopment
+</span>
+</div>
+<br/>
+
+<div class="copyright">
+		Copyright © FlaJu Development 2016. Todos os direitos reservados.
+</div>   
+</div>
+</body>
+
+
+</html>
+

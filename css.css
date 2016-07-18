@@ -1,0 +1,142 @@
+html{width:100%;}
+body{
+	margin:0;
+	padding:0;
+	height:100%;
+	font-family: 'Lato', sans-serif;
+}
+#menu{
+	position:fixed;
+	width:100%;
+	background:linear-gradient(to right, #130400,#800000);
+	box-shadow: 1px 1px 5px #000000;
+	z-index:9999;
+}
+#menu ul{
+	list-style:none;
+	margin-left:30%;
+}
+#menu ul li{
+	display:inline;
+
+}
+#menu ul li a{
+	text-decoration:none;
+	font-size:25px;
+	padding:15px;
+	color:#fff;
+
+	-webkit-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	transition:all 0.5s linear;
+}
+#menu ul li a:hover{
+	color:#DC143C;
+}
+h1{
+	text-align:justify;
+	font-size:280%;
+	color:#fff;
+	text-shadow:0 2px 2px #000;
+	margin-top:-2%;
+}
+.center{
+	text-align:center;
+	color:#fff;
+	margin-top:-10%;
+}
+#home{
+	/*background-color:#4682B4;*/
+	background:url(img/5.jpg);
+	background-size: cover;
+
+}
+#empresa{
+	/*background-color:#FF8C00;*/
+	background-image:url(img/1.png);
+	background-size:cover;
+}
+#servico{
+	background:url(img/4.jpg);
+	background-size: cover;
+	
+}
+#cliente{
+	background:url(img/2.jpg);
+	background-size: cover;
+
+	
+}
+#orcamento{
+	background:url(img/3.jpg);
+	background-size: cover;
+	
+}
+#portfolio{
+	background:url(img/1.jpg);
+	background-size: cover;
+	
+}
+#contato{
+	/*background-color:#DC143C;*/
+	background-size:cover;
+	background-color:#130400;
+	height: 400px;
+	
+}
+
+
+.slide{
+	padding:25% 2%;
+	min-height:100%;
+	width:100%;
+	box-sizing:border-box;
+	
+}
+.imagem{
+	position:relative;
+}
+.img-mask{
+	 width:100%; /* largura da imagem máscara */
+   height:100%; /* altura da imagem máscara */
+   position:absolute;
+   top:0;
+   left:0;
+   background:url(img/pontinhos.png) 0 0 no-repeat; /* imagem máscara */
+   background-size:cover;
+}
+#fixed li a:hover{
+color:#DC143C;
+}
+.copyright {
+	color:#fff;
+    background:linear-gradient(to right, #1C1C1C , #400000);
+    padding:30px;
+    text-align: center;
+}
+.fa{
+	font-size: 25px;
+	color:#fff;
+	padding:2px;
+	background-color:#000000;
+	border-radius: 100px;
+	padding:11px;
+
+}
+span{
+	color:#444444;
+	font-size: 20px;
+	border-radius:20px;
+	padding:3px;
+}
+.social-icons{
+	margin-left:76%;
+}
+.contatos{
+	margin-left: 80%;
+	font-size: 2em;
+}
+
+
+

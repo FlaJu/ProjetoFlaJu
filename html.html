@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<title>Efeito de movimento usando HTML</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css01.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) { 
+    $(".scroll").click(function(event){        
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
+   });
+});
+</script>
+</script>
+</head>
+<body>
+
+<header id="menu">
+	<ul>
+		<li><a href="#home" class="scroll">Home</a></li>
+		<li><a href="#sobre" class="scroll">Sobre</a></li>
+		<li><a href="#contato" class="scroll">Contato</a></li>
+	</ul>
+</header>
+
+<div id="home" class="slide">
+
+	Home
+
+</div>
+
+<div id="sobre" class="slide">
+
+	Sobre
+
+</div>
+
+<div id="contato" class="slide">
+
+	Contato
+
+</div>
+
+</body>
+</html>

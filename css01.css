@@ -1,0 +1,49 @@
+html{width:100%;overflow:hidden;}
+body{
+	margin:0;
+	padding:0;
+	height:100%;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	font-family:Century Gothic;
+}
+#menu{
+	position:fixed;
+	background-color:#444444;
+	width:100%;
+}
+#menu ul{
+	margin-left:50%;
+}
+#menu ul li{
+display:inline;
+padding:30px;
+}
+#menu ul li a{
+	text-decoration:none;
+	font-size:2em;
+	color:#fff;
+}
+.slide{
+	padding:25% 10%;
+	min-height:100%;
+	width:100%;
+	box-sizing:border-box;
+	transform-style:inherit;
+}
+#home{
+	background-color:#4682B4;
+	background-size:cover;
+	height:100%;
+}
+#sobre{
+	background-color:#FF8C00;
+	background-size:cover;
+	height:100%;
+
+}
+#contato{
+	background-color:#6B8E23;
+	background-size:cover;
+	height:100%;
+}
